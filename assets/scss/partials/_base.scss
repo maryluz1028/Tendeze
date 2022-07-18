@@ -5,10 +5,17 @@
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
 html {
   @apply antialiased;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+body{
+  @apply text-black-color bg-white-color min-h-[100vh] font-prelo; 
 
-  @screen md {
-    font-size: 18px;
-  }
+}
+button{
+  @apply #{outline-none !important}
+}
+h1,h2,h3,h4,h5,h6{
+  @apply font-times;
 }

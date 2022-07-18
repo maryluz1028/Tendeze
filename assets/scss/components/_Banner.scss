@@ -1,0 +1,5 @@
+.banner-image{
+    &::before{
+        @apply absolute content-[''] inline-block w-full h-[10%] bg-yellow-alpha-color bottom-0;
+    }
+}

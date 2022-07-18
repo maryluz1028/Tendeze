@@ -1,19 +1,19 @@
 // you can import modules from the theme lib or even from
 // NPM packages if they support it…
-import ExampleComponent1 from "./components/ExampleComponent1";
-
-// you can also require modules if they support it…
-const ExampleModule2 = require('./components/example-2');
+import {hamburgerMenu,ActiveSubmenuClick, stickyHeader,addIconSubMenu} from "./components/Hamburger-menu";
 
 // Some convenient tools to get you started…
 import ReplaceObfuscatedEmailAddresses from "./components/ReplaceObfuscatedEmailAddresses";
 import AnimateOnPageLinks from "./components/AnimateOnPageLinks";
+import {videosOpenModal} from "./components/Videos-modal"
 
+// Initialise our components 
+document.addEventListener('DOMContentLoaded',(e)=>{
+    hamburgerMenu('#button-bars','.menu-nav-mobile');
+    ActiveSubmenuClick('.menu-nav-mobile #navbar_mobile .menu .menu-item .icon');
+    stickyHeader('header');
+    addIconSubMenu('.menu-nav-mobile .menu-item-has-children >a');
+    videosOpenModal('videos-modal','.video-img','#videos-close-modal','.video-modal-container');
 
-// Initialise our components on jQuery.ready…
-// jQuery(function ($) {
-//     ExampleComponent1.init();
-//     ExampleModule2.init();
-//     ReplaceObfuscatedEmailAddresses.init();
-//     AnimateOnPageLinks.init();
-// });
+})
+/************* */

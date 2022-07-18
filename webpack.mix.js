@@ -18,16 +18,20 @@ if (local.proxy) {
         open: false,
         files: [
             'build/**/*.{css,js}',
-            'templates/**/*.php'
+            'templates/**/*.php',
+            '**/*.php'
         ]
     });
 }
 
 mix.tailwind();
 mix.js('assets/js/app.js', 'js');
-mix.sass('assets/scss/app.scss', 'css');
+mix.sass('assets/scss/app.scss', 'css').options({ processCssUrls: false});
 
-if (mix.inProduction()) {
+mix.copy('assets/img', 'build/img');
+mix.copy('assets/font', 'build/font');  
+
+/* if (mix.inProduction()) {
     mix.versionHash();
     mix.sourceMaps();
-}
+} */

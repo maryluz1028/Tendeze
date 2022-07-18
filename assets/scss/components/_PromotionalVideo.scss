@@ -1,0 +1,10 @@
+.phrase{
+    h2{
+        &::before{
+            @apply content-['“'] block text-center lg:text-left;
+        }
+        &::after{
+            @apply content-['”'] block text-center lg:text-right;
+        }
+    }
+}

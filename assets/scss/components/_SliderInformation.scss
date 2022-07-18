@@ -1,0 +1,44 @@
+.slider-information{
+    .white{
+        @apply #{p-0 border-none !important};
+        .sa_hover_container{
+            @apply #{p-0 bg-white-color min-h-full !important};
+        }
+        .owl-nav{
+            .owl-prev,.owl-next{
+                @apply #{hidden w-0 h-0 !important};
+            }
+        }
+        .owl-item{
+            h2{
+                @apply text-3xl font-bold lg:text-5xl my-4;
+                font-family: 'prelo';
+                span{
+                    @apply #{text-black-color bg-yellow-color !important};
+                }
+            }
+            p{
+                @apply font-bold sm:text-2xl lg:text-xl pb-2;
+            }
+        }
+        .owl-stage-outer{
+            @apply bg-white-color;
+            .owl-stage{
+                @apply lg:mt-16 lg:mb-8;
+            }
+        }
+        .owl-dots{
+            @apply lg:top-[-10px] ;
+            @apply #{text-left!important};
+            .owl-dot{
+                span{
+                    @apply #{w-5 h-5 bg-black-color !important};
+                }
+            }
+            .owl-dot.active span{
+                @apply #{bg-yellow-color !important};
+            }
+        }
+    }
+
+}

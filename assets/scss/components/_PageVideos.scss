@@ -1,0 +1,36 @@
+.videos{
+    .video-card{
+        h2{
+            font-family: 'prelo';
+        }
+        .video-img{
+            &::before{
+                background-image: url(https://tendenzeperu.com/videos/svg/play.svg);
+                @apply absolute content-[''] inline-block w-[60px] h-[60px] md:w-[90px] md:h-[90px] bg-no-repeat;
+            }
+            &::after{
+                @apply  absolute content-[''] inline-block top-0 left-0 right-0 bottom-0;
+            }
+        }
+    }
+}
+.videos-close-modal{
+    &::after,&::before{
+        @apply absolute content-[''] inline-block w-[20px] h-[3px] bg-white-color rounded-full;
+    }
+    &::before{
+        @apply rotate-45;
+    }
+    &::after{
+        @apply -rotate-45;
+    }
+}
+.videos-modal{
+    @apply invisible opacity-0 transition-all duration-500;
+    video{
+        @apply max-h-[70vh];
+    }
+}
+.videos-modal.active{
+    @apply visible opacity-100;
+}

@@ -6,3 +6,20 @@
 @import "partials/components";
 @import "~tailwindcss/utilities";
 @import "partials/utilities";
+
+
+@import "partials/classes";
+
+
+
+
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb:active {
+    all: revert;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(153, 153, 153);
+}

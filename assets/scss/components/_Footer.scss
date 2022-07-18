@@ -1,0 +1,8 @@
+.email{
+    a{
+        &::before{
+            @apply absolute w-8 h-6 bottom-[-1px] right-[10%] content-[''] inline-block  border-2 border-solid border-yellow-color -translate-x-1/2 translate-y-1/2 rotate-[36deg] border-t-transparent border-l-transparent bg-black-color;
+            @apply lg:w-6 lg:h-5 lg:rotate-[40deg];
+        }
+    }
+}

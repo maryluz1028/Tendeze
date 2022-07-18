@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'prelo';
+    src: url('../font/Prelo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'prelo';
+    src: url('../font/Prelo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'prelo';
+    src: url('../font/Prelo-Bold.woff')format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'prelo';
+    src: url('../font/Prelo-Black.woff')format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'times';
+    src: url('../font/Times-Bold.woff')format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
